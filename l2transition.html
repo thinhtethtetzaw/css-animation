@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		CSS Transition
+	</title>
+</head>
+	<style type="text/css">
+		button{
+			width: 290px;
+			height: 90px;
+			background-color: blue;
+			color:#fff;
+			font-size: 20px;
+			border:none;
+			/*transition-property: background-color, color, width;*/
+			/*transition-property: all;
+			transition-duration: 1s;*/
+			/*transition:background-color 1s,color 1s,border-radius 1s;*/
+			transition: all 1s 2s;
+			/*transition-delay: 2s;*/
+		}
+		button:hover{
+			background-color: green;
+			color:black;
+			width:600px;
+			border-radius: 50%;
+		}
+	</style>
+
+<body>
+	<button>CSS Transition</button>
+
+</body>
+</html>

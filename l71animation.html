@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wave Effect</title>
+</head>
+	<style type="text/css">
+		body{
+			font-family: sans-serif;
+			background-color: #2f2f2f;
+			height: 100vh;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			margin:0;
+			overflow: hidden;
+		}	
+
+		.wave{
+			width: 500px;
+			height: 500px;
+			position: relative;
+		}
+
+		h2{
+			text-transform: uppercase;
+			font-size: 170px;
+			letter-spacing: 5px;
+
+			position: absolute;
+
+		}
+		h2:nth-child(1){
+			color: transparent;
+			-webkit-text-stroke:2px #03a9f4;
+		}
+		h2:nth-child(2){
+			color: #03a9f4;
+
+
+			animation-name: myani;
+			animation-duration: 2s;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes myani{
+			0%{
+				clip-path: polygon(0 100%, 0 52%, 19% 43%, 36% 42%, 47% 45%, 60% 50%, 72% 55%, 86% 54%, 100% 50%, 100% 100%);
+
+			}
+			50%{
+				clip-path: polygon(0 100%, 0 52%, 17% 58%, 32% 61%, 45% 62%, 63% 55%, 73% 52%, 85% 50%, 100% 50%, 100% 100%);
+
+
+
+			}
+			100%{
+				clip-path: polygon(0 100%, 0 52%, 19% 43%, 36% 42%, 47% 45%, 60% 50%, 72% 55%, 86% 54%, 100% 50%, 100% 100%);
+
+			}
+		}
+	</style>
+<body>
+	<div class="wave">
+		<h2>wave</h2>
+		<h2>wave</h2>
+
+	</div>
+
+</body>
+</html>
